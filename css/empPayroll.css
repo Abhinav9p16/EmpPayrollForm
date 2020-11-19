@@ -80,3 +80,19 @@ label {
     font-weight: bold;
     font-family: Roboto;
 }
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 80px;
+    border-radius: 20%;
+    margin-left: 12px;
+}
