@@ -51,3 +51,32 @@
     opacity: 1;
     padding-bottom: 20px;
 }
+.row-content{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+}
+
+label {
+    min-width: 140px;
+    display: inline-block;
+    padding: 12px 12px 12px 0px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px 1px #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.text{
+    font-size: 14px;
+    color: #42515f;
+    opacity: 1;
+    font-weight: bold;
+    font-family: Roboto;
+}
