@@ -96,3 +96,12 @@ label {
     border-radius: 20%;
     margin-left: 12px;
 }
+.date-select{
+    width: 60px;
+}
+.month-select{
+    width: 120px;
+}
+.year-select{
+    width: 100px;
+}
