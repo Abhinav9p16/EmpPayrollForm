@@ -96,6 +96,12 @@ label {
     border-radius: 20%;
     margin-left: 12px;
 }
+select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: normal normal 14px Roboto;
+    color: #42515f;
+}
 .date-select{
     width: 60px;
 }
@@ -125,4 +131,10 @@ label {
     padding: 2px 2px;
     border-radius: 4px;
     cursor: pointer;
+}
+.buttonSubmit{
+    margin-right: 20px;
+}
+.cancelButton{
+    text-decoration: none;
 }
