@@ -1,84 +1,92 @@
-.header content{
+body {
+    margin: 0;
+    height: 100%;
+}
+.header {
+    padding: 15px 0;
+    background-color: #ffffff;
+}
+.header-content {
     display: flex;
     flex-direction: row;
-    border: 0px solid black;
     justify-content: center;
+    align-items: center;
+    border: 0px solid green;
 }
-
-.logodiv{
+.logo-content {
     display: flex;
     flex-direction: row;
-    align-items: center; 
-    width: 80%;   
-    border: 0 solid green;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
 }
-
-.logodiv img{
-    border: 0px solid #42515f;
-    margin-left: 90px;
+.logo-content-img {
+    border: solid 0px #42515f;
 }
-
-.emp-text{
+.emp-text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #82a70c;
     text-transform: capitalize;
 }
-
+.emp-payroll {
+    color: #42515f;
+}
+* {
+    box-sizing: border-box;
+}
 .form-content {
+    min-height: calc(100% - 80px);
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0px solid green;
 }
-
-.form{
-    width: 70%;
+.form {
+    width: 65%;
     padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
 }
-
 .form-head {
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
-    color: #42512f;
+    color: #42515f;
     text-transform: capitalize;
     opacity: 1;
     padding-bottom: 20px;
 }
-.row-content{
+.row-content {
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     align-items: center;
-    border: 0px solid green;
+    border: opx solid green;
 }
-
-label {
+.label {
     min-width: 140px;
-    display: inline-block;
-    padding: 12px 12px 12px 0px;
 }
-
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
 .input {
     width: 100%;
     padding: 12px;
-    border: 1px 1px #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-
-.text{
-    font-size: 14px;
-    color: #42515f;
-    opacity: 1;
-    font-weight: bold;
-    font-family: Roboto;
 }
 .profile-radio-content {
     display: flex;
@@ -90,51 +98,93 @@ label {
     flex-direction: row;
     align-items: center;
 }
-
 .profile {
-    width: 80px;
-    border-radius: 20%;
+    width: 40px;
+    border-radius: 50%;
     margin-left: 12px;
 }
 select{
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
-    font: normal normal 14px Roboto;
-    color: #42515f;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #e02525;
+    background-color: transparent;
 }
-.date-select{
-    width: 60px;
-}
-.month-select{
-    width: 120px;
-}
-.year-select{
-    width: 100px;
-}
-.notes{
-    height: 150px;
-    width: 280px;
-}
-
-.button-Parent{
+.buttonParent{
     display: flex;
+    margin-bottom: 10px;
     justify-content: space-between;
     margin-top: 20px;
 }
-
 .button{
-    font-size: 16px;
+    font-size: 20px;
     font-family: Roboto;
-    font-weight: 400;
+    letter-spacing: 0px;
     color: #42515f;
-    min-width: 100px;
-    padding: 2px 2px;
-    border-radius: 4px;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
     cursor: pointer;
 }
-.buttonSubmit{
-    margin-right: 20px;
+.submitButton{
+    border: none;
+    background: #f5f5f5;
+    margin-right: 30px;
 }
 .cancelButton{
     text-decoration: none;
+    text-align: center;
+}
+@media only screen and (max-width: 960px){
+    .cancelButton{
+        margin-left: 0px;
+    }
+    .form{
+        width:85%;
+        padding: 44px 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .form{
+        margin-top: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .uploadButton{
+        justify-content: flex-start;
+    }
+    .profile-radio-button{
+        flex-flow: wrap;
+    }
+    .submit-reset{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton{
+        margin: 0;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+#submitButton:hover, #resetButton:hover, #cancelButton:hover{
+    background-color: rgb(72, 194, 55);
+    color: white;
+}
+#submitButton:active, #resetButton:active, #cancelButton:active{
+    background-color: rgb(69, 55, 194);
+    color: rgb(0, 0, 0);
 }
